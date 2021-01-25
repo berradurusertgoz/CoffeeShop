@@ -1,0 +1,17 @@
+const hero = document.querySelector('.hero');
+const slider = document.querySelector('.slider');
+const logo = document.querySelector('#logo');
+const hamburger = document.querySelector('.hamburger');
+const headline = document.querySelector('.headline');
+const navbar = document.querySelector('.navbar');
+
+
+const tl = new TimelineMax();
+
+tl.fromTo(hero,1.5, {height: "0%"}, {height: '80%', ease: Power2.easeInOut});
+
+
+hamburger.addEventListener('click', () => {
+    navbar.classList.toggle("change")
+
+});
